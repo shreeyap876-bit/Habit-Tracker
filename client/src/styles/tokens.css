@@ -1,0 +1,136 @@
+/* ==========================================================================
+   Design tokens
+   A warm, paper-like palette taken from the inspiration boards: cream base,
+   soft sand surfaces, sage and clay accents, serif display type.
+   ========================================================================== */
+
+:root {
+  /* --- Surfaces ---------------------------------------------------------- */
+  --bg: #f6f2ec;
+  --bg-tint: #efe8de;
+  --surface: #fffdfa;
+  --surface-2: #faf6f0;
+  --surface-3: #f2ebe1;
+  --overlay: rgba(43, 39, 35, 0.42);
+
+  /* --- Lines and text ---------------------------------------------------- */
+  --border: #e8dfd2;
+  --border-strong: #d8ccba;
+  --ink: #2b2723;
+  --ink-2: #57504a;
+  --muted: #948a7d;
+  --muted-soft: #b3a89a;
+
+  /* --- Brand ------------------------------------------------------------- */
+  --accent: #a9705a;
+  --accent-hover: #93604c;
+  --accent-soft: #f0e2da;
+  --accent-ink: #7c4c39;
+
+  /* --- Status ------------------------------------------------------------ */
+  --success: #6f8c63;
+  --success-soft: #e6ede1;
+  --danger: #b4574f;
+  --danger-soft: #f6e5e3;
+
+  /* --- Habit colour tokens (solid / soft / deep) -------------------------- */
+  --habit-sage: #8fa284;
+  --habit-sage-soft: #e6ecdf;
+  --habit-sage-deep: #5f7355;
+
+  --habit-clay: #c08b74;
+  --habit-clay-soft: #f4e5dd;
+  --habit-clay-deep: #9a6650;
+
+  --habit-sky: #8aa9c4;
+  --habit-sky-soft: #e2ebf3;
+  --habit-sky-deep: #5c7d99;
+
+  --habit-lavender: #a79bc4;
+  --habit-lavender-soft: #eae6f2;
+  --habit-lavender-deep: #7a6d99;
+
+  --habit-amber: #d0a25c;
+  --habit-amber-soft: #f7ecd9;
+  --habit-amber-deep: #a3762f;
+
+  --habit-rose: #cf9096;
+  --habit-rose-soft: #f7e6e8;
+  --habit-rose-deep: #a5646b;
+
+  /* --- Type -------------------------------------------------------------- */
+  --font-display: 'Fraunces', 'Iowan Old Style', Georgia, 'Times New Roman', serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.8125rem;
+  --text-base: 0.9375rem;
+  --text-md: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.625rem;
+  --text-2xl: 2.125rem;
+  --text-3xl: 2.75rem;
+
+  /* --- Spacing ----------------------------------------------------------- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+
+  /* --- Radii ------------------------------------------------------------- */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-pill: 999px;
+
+  /* --- Elevation --------------------------------------------------------- */
+  --shadow-xs: 0 1px 2px rgba(65, 52, 40, 0.05);
+  --shadow-sm: 0 2px 8px rgba(65, 52, 40, 0.06);
+  --shadow-md: 0 10px 30px rgba(65, 52, 40, 0.09);
+  --shadow-lg: 0 24px 60px rgba(65, 52, 40, 0.16);
+
+  /* --- Motion ------------------------------------------------------------ */
+  --ease: cubic-bezier(0.32, 0.72, 0, 1);
+  --duration: 180ms;
+
+  /* --- Layout ------------------------------------------------------------ */
+  --sidebar-width: 244px;
+  --topbar-height: 72px;
+  --content-max: 1240px;
+}
+
+/* Per-habit colour variables, set on any element via `data-color`. */
+[data-color='sage'] {
+  --habit: var(--habit-sage);
+  --habit-soft: var(--habit-sage-soft);
+  --habit-deep: var(--habit-sage-deep);
+}
+[data-color='clay'] {
+  --habit: var(--habit-clay);
+  --habit-soft: var(--habit-clay-soft);
+  --habit-deep: var(--habit-clay-deep);
+}
+[data-color='sky'] {
+  --habit: var(--habit-sky);
+  --habit-soft: var(--habit-sky-soft);
+  --habit-deep: var(--habit-sky-deep);
+}
+[data-color='lavender'] {
+  --habit: var(--habit-lavender);
+  --habit-soft: var(--habit-lavender-soft);
+  --habit-deep: var(--habit-lavender-deep);
+}
+[data-color='amber'] {
+  --habit: var(--habit-amber);
+  --habit-soft: var(--habit-amber-soft);
+  --habit-deep: var(--habit-amber-deep);
+}
+[data-color='rose'] {
+  --habit: var(--habit-rose);
+  --habit-soft: var(--habit-rose-soft);
+  --habit-deep: var(--habit-rose-deep);
+}
