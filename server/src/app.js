@@ -42,9 +42,6 @@ app.use(cookieParser());
 // HTTP request logging
 app.use(morgan(env.isProduction ? 'combined' : 'dev'));
 
-// API routes
-app.use('/api', apiLimiter, routes);
-
 // API health check
 app.get('/', (req, res) => {
   res.status(200).json({
@@ -52,6 +49,9 @@ app.get('/', (req, res) => {
     message: 'Habit Tracker API is running!',
   });
 });
+
+// API routes
+app.use('/api', apiLimiter, routes);
 
 // Handle unknown routes
 app.use(notFound);
